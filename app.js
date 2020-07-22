@@ -45,6 +45,7 @@ startButton.addEventListener('click', () => {
         const tries = document.querySelectorAll('.tries');
         tries.forEach(item => {
             item.firstElementChild.src = "images/liveHeart.png";
+            item.style.opacity = '1';
         });
     }
 
@@ -76,7 +77,7 @@ qwerty.addEventListener('click', e => {
                     tries[missed - 1].firstElementChild.src = "images/lostHeart.png"
                     tries[missed - 1].style.opacity = '1';
 
-                }, 400);
+                }, 200);
             }
             button.className = 'unchosen';
         } else {
